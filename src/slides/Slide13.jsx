@@ -96,61 +96,6 @@ function Slide13() {
           </div>
         </div>
       </div>
-
-      <div className="bg-yellow-900/20 border border-yellow-400/50 rounded-lg p-6 mt-8">
-        <h3 className="text-xl font-semibold mb-3 text-yellow-300">🏗️ Large App Structure Pattern</h3>
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <h4 className="font-semibold mb-3">Route Groups by Feature</h4>
-            <CodeBlock 
-              language="jsx" 
-              filename="FeatureGroups.jsx"
-            >
-{`// Public routes
-<Route path="/" element={<Home />} />
-<Route path="/about" element={<About />} />
-
-// Auth routes
-<Route path="/login" element={<Login />} />
-<Route path="/register" element={<Register />} />
-
-// Protected routes
-<Route 
-  path="/dashboard" 
-  element={<ProtectedRoute><Dashboard /></ProtectedRoute>} 
-/>
-<Route 
-  path="/profile" 
-  element={<ProtectedRoute><Profile /></ProtectedRoute>} 
-/>`}
-            </CodeBlock>
-          </div>
-          <div>
-            <h4 className="font-semibold mb-3">File Organization</h4>
-            <CodeBlock 
-              language="bash" 
-              filename="file-structure.txt"
-            >
-{`src/
-  pages/
-    public/
-      Home.jsx
-      About.jsx
-    auth/
-      Login.jsx
-      Register.jsx
-    dashboard/
-      Dashboard.jsx
-      Profile.jsx
-  components/
-    layout/
-    shared/
-  App.jsx`}
-            </CodeBlock>
-          </div>
-        </div>
-      </div>
-
       <div className="bg-red-900/30 border-l-4 border-red-400 rounded-lg p-6 mt-8">
         <h3 className="text-xl font-semibold mb-3 text-red-300">⚠️ Common Mistakes</h3>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

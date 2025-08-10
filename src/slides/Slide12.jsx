@@ -74,8 +74,7 @@ function ForwardButton() {
             >
 {`function SmartBackButton({ fallback = '/' }) {
   const navigate = useNavigate()
-  const location = useLocation()
-  
+
   const handleBack = () => {
     // Check if we have history
     if (window.history.length > 1) {
@@ -136,6 +135,15 @@ function ForwardButton() {
   )
 }`}
             </CodeBlock>
+
+            {/* ვიზუალური მაგალითი */}
+            <div className="mt-4 bg-white/5 p-3 rounded flex items-center space-x-2 text-sm">
+              <button className="px-2 py-1 bg-blue-500/20 rounded hover:bg-blue-500/40">Home</button>
+              <span>/</span>
+              <button className="px-2 py-1 bg-blue-500/20 rounded hover:bg-blue-500/40">products</button>
+              <span>/</span>
+              <button className="px-2 py-1 bg-blue-500/20 rounded hover:bg-blue-500/40">laptops</button>
+            </div>
           </div>
         </div>
       </div>
